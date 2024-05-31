@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="/blog/lib/animate-css/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"rcore-os.github.io","root":"/blog/","scheme":"Muse","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="rcore-os Blog">
+<meta property="og:url" content="http://rcore-os.github.io/blog/page/2/index.html">
+<meta property="og:site_name" content="rcore-os Blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="rcore-os Group">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://rcore-os.github.io/blog/page/2/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>rcore-os Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <main class="main">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">rcore-os Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/blog/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/blog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/blog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">rcore-os Group</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/blog/archives/">
+        
+          <span class="site-state-item-count">217</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/blog/categories/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/blog/tags/">
+          
+        <span class="site-state-item-count">205</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </header>
+
+      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+      <div class="main-inner">
+        
+
+        <div class="content index posts-expand">
+          
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/04/24/2024%E6%98%A5%E5%AD%A3%E5%BC%80%E6%BA%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E6%80%BB%E7%BB%93%E6%8A%A5%E5%91%8A-255doesnotexist/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/04/24/2024%E6%98%A5%E5%AD%A3%E5%BC%80%E6%BA%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E6%80%BB%E7%BB%93%E6%8A%A5%E5%91%8A-255doesnotexist/" class="post-title-link" itemprop="url">2024春季开源操作系统训练营第一阶段总结报告-255doesnotexist</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-04-24 10:30:40" itemprop="dateCreated datePublished" datetime="2024-04-24T10:30:40+00:00">2024-04-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="2024春季开源操作系统训练营第一阶段总结报告"><a href="#2024春季开源操作系统训练营第一阶段总结报告" class="headerlink" title="2024春季开源操作系统训练营第一阶段总结报告"></a>2024春季开源操作系统训练营第一阶段总结报告</h1><p>一个月之前其实跟着 The Rust Programming Language 学习过 Rust，从同学那里听过 rustlings，但没有做过。这次有机会搓了一下，对理解的帮助还是挺大的。</p>
+<h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><p>rustlings 的实验其实挺简单的。基本上跟着编译器和提示都能独立完成。它的 check 也不严格，数据点少、过编译即可。基本上完成质量全靠自觉</p>
+<p>Rust 语言的约束，在最后 10 道算法题上还是体现得比较棘手的。一部分数据结构的实现需要套 Arc 甚至 unsafe。这也是所谓“必要的牺牲”吧。此外，生命周期的处理感觉还是不够优雅。有些奇怪的感觉。</p>
+<p>除了这 10 题以外，其他部分基本都是语言基本语法、内容的介绍，也包括包管理器的使用，cargo test 的使用。相对来说都是比较基础的内容。只要跟着做就很简单。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>rustlings 是个很好的 Rust 学习项目，很适合计划做 rCore Lab 的同学入门 Rust 使用。是这样的。没错。</p>
+<p>希望后期也能继续跟下去。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/04/23/2024-OS%E8%90%A5%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E6%80%BB%E7%BB%93-FV/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/04/23/2024-OS%E8%90%A5%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E6%80%BB%E7%BB%93-FV/" class="post-title-link" itemprop="url">2024 OS营第一阶段总结-FV</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-04-23 17:11:39" itemprop="dateCreated datePublished" datetime="2024-04-23T17:11:39+00:00">2024-04-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/report/" itemprop="url" rel="index"><span itemprop="name">report</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>沉迷 LOL 十年，归来仍是白银 的经常翘课但毕业后有自己复习408专业课的血亏科班老东西，写过 vue,nodejs,python,C </p>
+<blockquote>
+<p>(欢迎找我干活，可以为爱发电) </p>
+</blockquote>
+<ul>
+<li>每日学习记录：<a href="https://github.com/HideOnBush-FV/os-summer-record" target="_blank" rel="noopener">https://github.com/HideOnBush-FV/os-summer-record</a></li>
+</ul>
+<p>第一阶段做的事就是 90% 刷 rustlings，加上 10% 复习了下基础知识</p>
+<h1 id="rust"><a href="#rust" class="headerlink" title="rust"></a>rust</h1><blockquote>
+<p>一言以蔽之，我永远喜欢 C 🌝🌝🌝🌝🌝🌚</p>
+</blockquote>
+<p>安全诚可贵，自由价更高。但是为了完成训练营还是学习一下</p>
+<p><code>类型太多要匹配，所有权转移，可变引用与不可变引用的限制</code> 是耽误我最长时间的，机制理解但是感觉用起来就是很不方便。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li>圣经： <a href="https://course.rs/basic/collections/vector.html" target="_blank" rel="noopener">https://course.rs/basic/collections/vector.html</a></li>
+<li>官方手册：<a href="https://doc.rust-lang.org/std/index.html" target="_blank" rel="noopener">https://doc.rust-lang.org/std/index.html</a></li>
+<li>官方文档：<a href="https://doc.rust-lang.org/book/" target="_blank" rel="noopener">https://doc.rust-lang.org/book/</a></li>
+</ul>
+<p>圣经也就图一乐，真学rust还得 <code>官方文档</code>，写代码神器：<code>官方手册</code></p>
+<p>官方文档：理解一些机制和基础用法，做 rustlings 里模块分类和调用方式、编译器参数 等题目时用到的</p>
+<p>官方手册：各种类型包含的函数和用法，不会做了就翻一翻，在左边列表找一找，经常能有意想不到的收获</p>
+<h2 id="具体内容"><a href="#具体内容" class="headerlink" title="具体内容"></a>具体内容</h2><p>对我有用的新学到的且值得值得记录的 主要是 Option 的几个方法</p>
+<ul>
+<li>as_mut() ：&amp;mut Option<T> -&gt; Option&lt;&amp;mut T&gt;.</T></li>
+<li>as_ref() ： &amp;Option<T> -&gt; Option&lt;&amp;T&gt;.</T></li>
+<li>as_deref_mut() ： Option<T> (or &amp;mut Option<T>) to Option&lt;&amp;mut T::Target&gt;</T></T></li>
+</ul>
+<p>前面题目里用到的时候只是按照提示修改，没有细究功能和用法，后面算法题才发现很好用</p>
+<p>还有一些用起来不熟练或者还没用但感觉以后可能会有用的，具体用法等实践中再研究了</p>
+<ul>
+<li>Rc, Arc, Cell, RefCell</li>
+</ul>
+<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><p>包括 rustlings 里新加入了一些算法题，小复习了一下涉及到的 BST, heap 的内容，</p>
+<p>其他 BFS, DFS, stack，queue，图，都太基本了没啥好说的，DFS 连边的类型都不用区分 =。=<br>建议下次提升到 912 难度😉（bushi）<br>加点 最短路径、KMP啥的 可以有🥺</p>
+<h2 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h2><ul>
+<li><p>特性：中序，任意 parent 不小于左子树，不大于右子树。<br>亦即中序遍历序列单调非降</p>
+<h2 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h2></li>
+<li><p>平衡因子处处非负：左子树满树</p>
+</li>
+<li><p>逻辑节点与物理元素依层次遍历次序彼此对应：</p>
+</li>
+</ul>
+<p>Parent(i) = ( i-1 ) &gt;&gt; 1<br>LChild(i) = ( 1 + ( i &lt;&lt; 1 )<br>RChild(i) = ( 1 + i ) &lt;&lt; 1</p>
+<h2 id="完全二叉堆"><a href="#完全二叉堆" class="headerlink" title="完全二叉堆"></a>完全二叉堆</h2><ul>
+<li>用物理上的向量实现逻辑上的完全二叉树</li>
+<li>维持偏序而非全序，即 val [i] &lt;= val [Parent(i)]</li>
+</ul>
+<p>操作</p>
+<ul>
+<li>插入 + 上滤 O(lgn)：只与 Parent 对比并直接互换 </li>
+<li>删除 + 下滤 O(lgn)：用末节点填充根节点（维持结构性）+ swap(e, max(Lchild, Rchild)) （维持堆序性）</li>
+</ul>
+<h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><p>当年就这门课学得最好，前几个月刷了下 <code>《Three Easy Pieces》</code>，看一半发现还是 <code>rCore指导书</code> 最好，理论与实践相结合，讲解详细清晰，操作切实可行，跟着刷了两章</p>
+<p>第一阶段用不上，剩下的等到第二阶段再补啦</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/04/23/2024-rcore-summary-stage1-imag1ne/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/04/23/2024-rcore-summary-stage1-imag1ne/" class="post-title-link" itemprop="url">2024夏开源操作系统训练营第一阶段小结</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-04-23 12:55:26" itemprop="dateCreated datePublished" datetime="2024-04-23T12:55:26+00:00">2024-04-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/report/" itemprop="url" rel="index"><span itemprop="name">report</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>初次接触 Rust，是在学校学习操作系统课程的时候。这门课的练习课中，需要用 Rust 语言来完成编程练习。在学习 Rust 之前，我对编程语言的学习并没有很大的热情。因为在我的印象里除了学习第一门编程语言 C 的时候花了些功夫，之后学习的 Java，Python，Javascript 之类的都是熟悉一下语法后就很快上手。当时我看学校里课程的安排也就是大概给学习 Rust 一周的时间，后面就开始做各种练习了，所以我并没从 Rust 这门语言中期待过什么特别复杂的东西。</p>
+<p>真正开始学习的时候，发现事情好像并没有我想的那么简单。我发现除了要理解 Rust 的生命周期，所有权等概念意外，还要关注很多底层的细节。慢慢地我就明白了，想要真正理解 Rust 这门语言，我需要深入思考 Rust 的设计哲学，多看看 <a href="https://rust-lang.github.io/rfcs/" target="_blank" rel="noopener">The Rust RFC Book</a>，收获会非常大。</p>
+<p>对于 Rust 这门编程语言的学习，离我最开始接触有一段时间了。这次训练营的第一阶段，其实对我个人来说是对这门编程语言的复习和巩固。</p>
+<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>学习 Rust 我感觉没有很难，多读一读 <a href="https://doc.rust-lang.org/book/" target="_blank" rel="noopener">The Rust Programming Language</a>,  <a href="https://rust-lang.github.io/rfcs/" target="_blank" rel="noopener">The Rust RFC Book</a> 和 <a href="https://doc.rust-lang.org/std/" target="_blank" rel="noopener">标准库文档</a>，对于初期学习完全足够。对于 Rustlings，我并不是特别喜欢，对于学习来说帮助并不大，里面的练习对于学习者来说就是难者不会，会者不难。多写多练多交流，有疑惑不要迟疑，打开 <a href="https://play.rust-lang.org" target="_blank" rel="noopener">Rust Playground</a>多写示例探索，在我看来是最好的学习方法。</p>
+<p>对于语言本身那些细碎的知识点，也没做过详细的笔记。也就是在学习闭包的时候写过一篇总结：<a href="https://zhuanlan.zhihu.com/p/341815515" target="_blank" rel="noopener">Rust中的闭包与关键字move</a></p>
+<p>参加这次训练营也是想重新拾起 Rust，并将其运用到实践当中。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/04/23/2024%E6%98%A5%E5%A4%8FrCore%E8%AE%AD%E7%BB%83%E8%90%A5%E6%80%BB%E7%BB%93-Fontlos/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/04/23/2024%E6%98%A5%E5%A4%8FrCore%E8%AE%AD%E7%BB%83%E8%90%A5%E6%80%BB%E7%BB%93-Fontlos/" class="post-title-link" itemprop="url">2024春夏rCore训练营总结--Fontlos</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-04-23 10:40:53" itemprop="dateCreated datePublished" datetime="2024-04-23T10:40:53+00:00">2024-04-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/report/" itemprop="url" rel="index"><span itemprop="name">report</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>几年前就萌生了用 Rust 制作一个操作系统的想法, 但 x86 的复杂度又有点让人望而却步, 而当时恰好遇到了 riscv, 恰好遇到了 rCore. 到现在, 终于有了一个可以亲身加入训练营的机会, 在此感谢各位老师和学长们为此的付出</p>
+<h1 id="第一阶段-Rustlings-总结"><a href="#第一阶段-Rustlings-总结" class="headerlink" title="第一阶段 Rustlings 总结"></a>第一阶段 Rustlings 总结</h1><p>几年前将自己学习 Rust 的过程汇总成笔记写成教程放在 <a href="https://fontlos.com" target="_blank" rel="noopener">个人博客</a> 上了. 这里只再简单总结一下一些重要概念内容</p>
+<p><strong>所有权 (Ownership)</strong></p>
+<p>所有权是 Rust 的一个核心概念, 用于确保内存安全. 它规定了一个变量 (或数据) 在任何时刻都有且仅有一个所有者. 当所有者离开作用域时, 其所拥有的数据将自动释放, 防止内存泄漏. 通过移动赋值和不可变 / 可变借用, 得以控制数据的访问和生命周期</p>
+<ol>
+<li><strong>移动赋值</strong>: 当一个值从一个变量转移到另一个变量时, 原变量将不再拥有数据所有权, 不能再被访问</li>
+<li><strong>引用与借用</strong>:<ul>
+<li><strong>不可变引用</strong>: 允许安全读取但不修改原始数据</li>
+<li><strong>可变引用</strong>: 独占访问, 允许修改数据, 同一作用域内不可存在多个可变引用指向同一数据</li>
+</ul>
+</li>
+</ol>
+<p><strong>泛型 (Generics) 与生命周期 (Lifetimes)</strong></p>
+<p>泛型允许创建适用于多种类型的数据结构和函数, 无需重复实现. 生命周期可被视为一种特殊的泛型. 生命周期注解是用来描述引用的有效期的一种机制. 在函数签名或结构体定义中, 通过类似 <code>&#39;a</code> 这样的符号来表示生命周期参数, 并通过上下文推断或显式声明来确保引用不会超过其底层数据的有效期</p>
+<p><strong>Traits (特性)</strong></p>
+<p>特质是 Rust 中的一种接口抽象, 它定义了一组方法签名, 供实现特质的类型遵守. 通过 traits, Rust 实现了面向对象编程中的多态性.</p>
+<p><strong>智能指针</strong></p>
+<p>Rust 提供了一系列智能指针类型, 如 <code>Box&lt;T&gt;</code> <code>Rc&lt;T&gt;</code> <code>Arc&lt;T&gt;</code> <code>RefCell&lt;T&gt;</code> 等, 它们分别用于管理堆上的唯一所有权, 引用计数共享所有权, 线程安全的引用计数共享所有权以及在编译时静态检查之外增加运行时借用检查等场景</p>
+<p><strong>多线程与异步编程</strong></p>
+<ul>
+<li><strong>多线程</strong>: Rust 支持原生线程, 通过 <code>std::thread</code> 模块相关API. Rust 的 Ownership 和借用规则有助于防止数据竞争和死锁等问题，<code>Mutex</code>, <code>RwLock</code> 等同步原语进一步加强了线程间的安全通信</li>
+<li><strong>异步编程</strong>: Rust 异步编程模型基于 futures 和 <code>async/await</code> 关键字，提供了高效非阻塞IO的能力. <code>tokio</code> 和 <code>async-std</code> 等库提供了异步编程的基础设施, 包括任务调度, TCP / HTTP 网络编程等</li>
+</ul>
+<p>除了这些基本语法, 在练习中也实践了手动实现链表, 双向链表, 堆栈, 深度优先和广度优先算法, 排序算法等. 通过 Rustlings 练习, 可以逐步掌握以上各个概念的实际应用, 通过解决实际问题加深对 Rust 编程特性的理解, 并学会如何在实践中遵循 Rust 的安全性和性能原则, 为接下来的第二阶段打下基础, 以构建安全高效的 OS 内核</p>
+<p>此外也感谢群内的大佬们, 没事翻翻大佬的聊天记录总能学到新东西 :)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/04/23/abcd1234-rust-os/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/04/23/abcd1234-rust-os/" class="post-title-link" itemprop="url">abcd1234-rust-os</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-04-23 00:35:51" itemprop="dateCreated datePublished" datetime="2024-04-23T00:35:51+00:00">2024-04-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/rust-stage-1/" itemprop="url" rel="index"><span itemprop="name">rust-stage-1</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Rust-OS-一阶段学习总结"><a href="#Rust-OS-一阶段学习总结" class="headerlink" title="Rust OS 一阶段学习总结"></a>Rust OS 一阶段学习总结</h1><h2 id="个人背景概述"><a href="#个人背景概述" class="headerlink" title="个人背景概述"></a>个人背景概述</h2><p>我是一名软件工程专业的大二本科生，曾参与过2023年秋冬季训练营。<br>在去年的训练营中，我学习了rust，但因为第一次学习，且当时需要准备期中考试和各科作业，没有按时通过第一阶段。<br>虽然我后续进入了二阶段群，但没有完成第二阶段的实验部分，今年重新参与，打算认真跟进下去。</p>
+<h2 id="今年一阶段学习时间表"><a href="#今年一阶段学习时间表" class="headerlink" title="今年一阶段学习时间表"></a>今年一阶段学习时间表</h2><ul>
+<li>2024-03-27 重新报名参与活动，并邀请了一名本校大三学长共同进步</li>
+<li>2024-04-07 正式开始参与活动，又邀请了两位同校同学，我开始重新复习rust</li>
+<li>2024-04-12 通过rust圣经复习至基础部分完成，开始进行做题</li>
+<li>2024-04-13 累计做题3小时，做至43题</li>
+<li>2024-04-19 进行到cow指针部分</li>
+<li>2024-04-20 完成前100题</li>
+<li>2024-04-21 完成110题，开始提交</li>
+</ul>
+<h2 id="一阶段学习内容概述"><a href="#一阶段学习内容概述" class="headerlink" title="一阶段学习内容概述"></a>一阶段学习内容概述</h2><p>我按照<a href="https://course.rs/about-book.html" target="_blank" rel="noopener">“rust语言圣经”</a>上的讲解顺序进行学习，分别学习了：</p>
+<ul>
+<li>变量的绑定与解构</li>
+<li>基本类型</li>
+<li>所有权和借用</li>
+<li>复合类型</li>
+<li>流程控制</li>
+<li>模式匹配</li>
+<li>方法</li>
+<li>泛型和特征</li>
+<li>集合类型</li>
+<li>生命周期</li>
+<li>返回值、错误处理</li>
+<li>包和模块</li>
+<li>注释和文档</li>
+<li>格式化输出</li>
+<li>智能指针</li>
+<li>多线程</li>
+<li>闭包与迭代器</li>
+<li>宏编程</li>
+<li>unsafe rust</li>
+</ul>
+<h2 id="问题概述"><a href="#问题概述" class="headerlink" title="问题概述"></a>问题概述</h2><p>在一阶段过程中，我遇到了一定的问题，并尝试进行解决。以下内容是我认为，不是那么“较为基础”的问题。</p>
+<h3 id="2024-04-12-问题：unicode展示"><a href="#2024-04-12-问题：unicode展示" class="headerlink" title="2024-04-12 问题：unicode展示"></a>2024-04-12 问题：unicode展示</h3><h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h4><p>在primitive_types2.rs中，注释要求尝试传入unicode字符，来理解rust中的char。<br>但是，我通过<code>https://emojidb.org/rust-emojis</code>这个<a href="https://emojidb.org/rust-emojis" target="_blank" rel="noopener">emojis网址</a>，拿到了一个emoji：☢️，进行测试，却直接编译出错：  </p>
+<img src="/blog/.io//2024/04/23/abcd1234-rust-os/unicode%E9%94%99%E8%AF%AF1.png" class title="unicode编译出错">
+<h4 id="出错代码"><a href="#出错代码" class="headerlink" title="出错代码"></a>出错代码</h4><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// primitive_types2.rs</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Fill in the rest of the line that has code missing! No hints, there's no</span></span><br><span class="line"><span class="comment">// tricks, just get used to typing these :)</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Execute `rustlings hint primitive_types2` or use the `hint` watch subcommand</span></span><br><span class="line"><span class="comment">// for a hint.</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="comment">// Characters (`char`)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Note the _single_ quotes, these are different from the double quotes</span></span><br><span class="line">    <span class="comment">// you've been seeing around.</span></span><br><span class="line">    <span class="keyword">let</span> my_first_initial = <span class="string">'C'</span>;</span><br><span class="line">    <span class="keyword">if</span> my_first_initial.is_alphabetic() &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"Alphabetical!"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> my_first_initial.is_numeric() &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"Numerical!"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"Neither alphabetic nor numeric!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> your_character = '☢️'; <span class="comment">// Finish this line like the example! What's your favorite character?</span></span><br><span class="line">    <span class="comment">// Try a letter, try a number, try a special character, try a character</span></span><br><span class="line">    <span class="comment">// from a different language than your own, try an emoji!</span></span><br><span class="line">    <span class="keyword">if</span> your_character.is_alphabetic() &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"Alphabetical!"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> your_character.is_numeric() &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"Numerical!"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"Neither alphabetic nor numeric!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h4><p>我与队伍里的成员们进行了初步的实验和讨论，确定报错的原因是：“☢️”无法被解析成字符，必须被解析成字符串。那么，问题来了，为什么它无法被解析成字符，而其它的unicode码可以被解析成字符？</p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>首先，我们进行了实验，从<a href="https://emojidb.org/rust-emojis" target="_blank" rel="noopener">emojis网站</a>中寻找了其他的emoji字符，发现大部分的emoji竟然都能被解析成字符。那问题就是出在“☢️”这个emoji上。</p>
+<p>我们队内通过查找rust官方的文档，发现，文档中说，unicode码被分为了两大类，一类是UTF-16，一类是UTF-8。<br>那么，这两大类的unicode字符有什么区别？<br>我们通过搜集资料、询问ai等方式，得到：</p>
+<blockquote>
+<p>UTF-16码点在0xD800到0xDFFF的范围内<br>UTF-8码点在0x80到0x10FFFF的范围内<br>如图<img src="/blog/.io//2024/04/23/abcd1234-rust-os/unicode%E9%94%99%E8%AF%AF2.png" class title="询问chat-1"><br>如图<img src="/blog/.io//2024/04/23/abcd1234-rust-os/unicode%E9%94%99%E8%AF%AF3.png" class title="询问chat-2"></p>
+</blockquote>
+<p>我们的总结是：UTF-8是8位的，其由一个字节进行表示，而UTF-16是16位的，其由两个字节进行表示，很可能是因为“☢️”是UTF-16编码，导致其无法被解析成rust里的“字符<code>char</code>”。</p>
+<h3 id="2024-04-12-问题：if内部返回异常"><a href="#2024-04-12-问题：if内部返回异常" class="headerlink" title="2024-04-12 问题：if内部返回异常"></a>2024-04-12 问题：if内部返回异常</h3><h4 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h4><p>在编程的过程中，我意外发现，在if语句内，通过不写分号的方式进行返回，会产生问题，程序无法编译，见下图：  </p>
+<img src="/blog/.io//2024/04/23/abcd1234-rust-os/if%E9%94%99%E8%AF%AF1.png" class title="if条件编译出错">
+
+<h4 id="出错代码-1"><a href="#出错代码-1" class="headerlink" title="出错代码"></a>出错代码</h4><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// structs3.rs</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Structs contain data, but can also have logic. In this exercise we have</span></span><br><span class="line"><span class="comment">// defined the Package struct and we want to test some logic attached to it.</span></span><br><span class="line"><span class="comment">// Make the code compile and the tests pass!</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Execute `rustlings hint structs3` or use the `hint` watch subcommand for a</span></span><br><span class="line"><span class="comment">// hint.</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#[derive(Debug)]</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Package</span></span> &#123;</span><br><span class="line">    sender_country: <span class="built_in">String</span>,</span><br><span class="line">    recipient_country: <span class="built_in">String</span>,</span><br><span class="line">    weight_in_grams: <span class="built_in">i32</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> Package &#123;</span><br><span class="line">    <span class="function"><span class="keyword">fn</span> <span class="title">new</span></span>(sender_country: <span class="built_in">String</span>, recipient_country: <span class="built_in">String</span>, weight_in_grams: <span class="built_in">i32</span>) -&gt; Package &#123;</span><br><span class="line">        <span class="keyword">if</span> weight_in_grams &lt;= <span class="number">0</span> &#123;</span><br><span class="line">            <span class="built_in">panic!</span>(<span class="string">"Can not ship a weightless package."</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            Package &#123;</span><br><span class="line">                sender_country,</span><br><span class="line">                recipient_country,</span><br><span class="line">                weight_in_grams,</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">fn</span> <span class="title">is_international</span></span>(&amp;<span class="keyword">self</span>) -&gt; <span class="built_in">bool</span> &#123;</span><br><span class="line">        <span class="comment">// if self.sender_country != self.recipient_country &#123;</span></span><br><span class="line">        <span class="comment">//     return true;</span></span><br><span class="line">        <span class="comment">//     // true // error, 'true' return to the func is_international, not outside</span></span><br><span class="line">        <span class="comment">// &#125;</span></span><br><span class="line">        <span class="comment">// // return false;</span></span><br><span class="line">        <span class="comment">// false // it can pass the compile</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// if self.sender_country == self.recipient_country &#123;</span></span><br><span class="line">        <span class="comment">//     false</span></span><br><span class="line">        <span class="comment">// &#125; else &#123;</span></span><br><span class="line">        <span class="comment">//     true</span></span><br><span class="line">        <span class="comment">// &#125;</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">self</span>.sender_country != <span class="keyword">self</span>.recipient_country <span class="comment">// most elegent way</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">fn</span> <span class="title">get_fees</span></span>(&amp;<span class="keyword">self</span>, cents_per_gram: <span class="built_in">i32</span>) -&gt; <span class="built_in">i32</span> &#123;</span><br><span class="line">        cents_per_gram * <span class="keyword">self</span>.weight_in_grams</span><br><span class="line">        <span class="comment">// Something goes here...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[cfg(test)]</span></span><br><span class="line"><span class="keyword">mod</span> tests &#123;</span><br><span class="line">    <span class="keyword">use</span> super::*;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#[test]</span></span><br><span class="line">    <span class="meta">#[should_panic]</span></span><br><span class="line">    <span class="function"><span class="keyword">fn</span> <span class="title">fail_creating_weightless_package</span></span>() &#123;</span><br><span class="line">        <span class="keyword">let</span> sender_country = <span class="built_in">String</span>::from(<span class="string">"Spain"</span>);</span><br><span class="line">        <span class="keyword">let</span> recipient_country = <span class="built_in">String</span>::from(<span class="string">"Austria"</span>);</span><br><span class="line"></span><br><span class="line">        Package::new(sender_country, recipient_country, -<span class="number">2210</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#[test]</span></span><br><span class="line">    <span class="function"><span class="keyword">fn</span> <span class="title">create_international_package</span></span>() &#123;</span><br><span class="line">        <span class="keyword">let</span> sender_country = <span class="built_in">String</span>::from(<span class="string">"Spain"</span>);</span><br><span class="line">        <span class="keyword">let</span> recipient_country = <span class="built_in">String</span>::from(<span class="string">"Russia"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> package = Package::new(sender_country, recipient_country, <span class="number">1200</span>);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">assert!</span>(package.is_international());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#[test]</span></span><br><span class="line">    <span class="function"><span class="keyword">fn</span> <span class="title">create_local_package</span></span>() &#123;</span><br><span class="line">        <span class="keyword">let</span> sender_country = <span class="built_in">String</span>::from(<span class="string">"Canada"</span>);</span><br><span class="line">        <span class="keyword">let</span> recipient_country = sender_country.clone();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> package = Package::new(sender_country, recipient_country, <span class="number">1200</span>);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">assert!</span>(!package.is_international());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">#[test]</span></span><br><span class="line">    <span class="function"><span class="keyword">fn</span> <span class="title">calculate_transport_fees</span></span>() &#123;</span><br><span class="line">        <span class="keyword">let</span> sender_country = <span class="built_in">String</span>::from(<span class="string">"Spain"</span>);</span><br><span class="line">        <span class="keyword">let</span> recipient_country = <span class="built_in">String</span>::from(<span class="string">"Spain"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> cents_per_gram = <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> package = Package::new(sender_country, recipient_country, <span class="number">1500</span>);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">assert_eq!</span>(package.get_fees(cents_per_gram), <span class="number">4500</span>);</span><br><span class="line">        <span class="built_in">assert_eq!</span>(package.get_fees(cents_per_gram * <span class="number">2</span>), <span class="number">9000</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="问题分析-1"><a href="#问题分析-1" class="headerlink" title="问题分析"></a>问题分析</h4><p>在遇到这个问题之后，我自己分析不出来为什么会出现这样的错误。于是，我去找队伍里的学长进行咨询。学长在他的教程书里找到了答案。出现这个问题的原因是，rust的但if语句的返回值必然是返回单元<code>()</code>，因此，我不使用return返回true时，破坏了if语句的语法规则，导致出错。具体教程如下：  </p>
+<img src="/blog/.io//2024/04/23/abcd1234-rust-os/if%E9%94%99%E8%AF%AF2.jpg" class title="if条件编译出错-解决">
+
+<h2 id="额外练习"><a href="#额外练习" class="headerlink" title="额外练习"></a>额外练习</h2><p>在第一阶段中，我在我们专业的操作系统实验课程中，使用rust编程，完成了实验内容，具体完成了：</p>
+<ul>
+<li>生产者与消费者问题</li>
+<li>时间片轮转和优先级队列的调度算法</li>
+<li>文件系统的实现</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在第一阶段的学习中，我巩固了我们所掌握的rust基础，并开始学习操作系统相关的知识。在这一部分，我还培养了我的思考能力，深入思考了rust的安全与不安全的地方。同时，通过和群友的交流，我也展开了对更多其它知识点的思考，比如“Copy”、“Clone”特征和“Drop”的冲突之处。<br>最重要的是，我深深意识到：<code>Talk is cheap, show me the code!</code></p>
+<h2 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h2><p>目前，我已经开始了第二阶段部分内容的学习，希望可以顺利的完成第二阶段的所有内容。之后参与到第三阶段的项目中，继续提高自己的能力。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/04/23/2024%E6%98%A5%E5%A4%8F%E5%AD%A3%E5%BC%80%E6%BA%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%AD%E7%BB%83%E8%90%A5Blog-%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/04/23/2024%E6%98%A5%E5%A4%8F%E5%AD%A3%E5%BC%80%E6%BA%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%AD%E7%BB%83%E8%90%A5Blog-%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/" class="post-title-link" itemprop="url">2024春夏季开源操作系统训练营Blog-第一阶段</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-04-23 00:04:51" itemprop="dateCreated datePublished" datetime="2024-04-23T00:04:51+00:00">2024-04-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/2024%E6%98%A5%E5%A4%8F%E5%AD%A3%E5%BC%80%E6%BA%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%AD%E7%BB%83%E8%90%A5/" itemprop="url" rel="index"><span itemprop="name">2024春夏季开源操作系统训练营</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>因为之前学C++结识的好友群中发了这个训练营的报名链接，想着正好OS还没有学就想着报名参加了:)。参加本次训练营之前只有csapp的计算机体系结构这一相关经验，对于Rust和RISC-V一无所知。编程能力上，主要是C++的服务器开发，做过几个分布式微服务项目，国外的一些公开课lab（CS144/CS106B/CS50等）。</p>
+<p>总体来说第一阶段学习过程还是有点痛苦的，毕竟Rust学习曲线比较陡峭，不过也有许多特性能与C++等语言联系起来，帮助理解。在报名之后就开始翻阅先前训练营的资料开始自学Rust了，总体还是顺利的</p>
+<h2 id="一些链接🔗"><a href="#一些链接🔗" class="headerlink" title="一些链接🔗"></a>一些链接🔗</h2><ul>
+<li>Rust学习记录：<a href="https://github.com/Andrew211vibe/Rust-Course-Note" target="_blank" rel="noopener">https://github.com/Andrew211vibe/Rust-Course-Note</a></li>
+<li>rCore-Tutorial学习实现：<a href="https://github.com/Andrew211vibe/rCore-Lab" target="_blank" rel="noopener">https://github.com/Andrew211vibe/rCore-Lab</a></li>
+<li>Writing an OS in Rust实现：<a href="https://github.com/Andrew211vibe/blog_os_impl.git" target="_blank" rel="noopener">https://github.com/Andrew211vibe/blog_os_impl.git</a></li>
+<li>个人学习笔记：<a href="https://andrew211vibe.notion.site/2024-850ebd79bde0444f985e7c3c816f501f" target="_blank" rel="noopener">2024开源操作系统训练营 (notion.site)</a></li>
+</ul>
+<h1 id="第一阶段总结"><a href="#第一阶段总结" class="headerlink" title="第一阶段总结"></a>第一阶段总结</h1><p>第一阶段主要集中于Rust基础语法的学习，并完成rustlings练习题，其次是进行RISC-V指令集的学习</p>
+<ul>
+<li>Rust因为是第一次上手，编码熟练度还不是很高，对于一些编码更高效的方式应用不熟练，算法和数据结构的实现遇到的磕绊较多</li>
+<li>RISC-V基本指令比较好理解，实际编写还是差一些，能反应指令的行为，一些寄存器记不住</li>
+<li>计组和编译原理知识比较薄弱</li>
+</ul>
+<h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><p>Rust学习过程主要参考阅读了《Rust圣经》、《Rust by Example》、和<a href="https://tourofrust.com/05_zh-cn.html" target="_blank" rel="noopener">Rust之旅</a><br>之后的时间主要是对《Rust圣经》中的进阶部分和基础部分进行阅读笔记并复习，基础部分难点主要集中在所有权和特征这两个知识点上，对于生命周期以及包和模块的讨论并不是特别深入。进阶部分都难哈哈哈哈，迭代器和智能指针还算比较好理解些，对于迭代器加闭包实现的函数式编程每次都让我觉得很强大，Cell和RefCell提供的内部可变性加上智能指针也给程序提供了很大的灵活性的前提下保证了一定的安全性。生命周期的使用也是一大难点了。之后还有unsafe Rust的使用以及宏编程（对比C/C++的难的多但功能性也更强大）</p>
+<p>rustlings的基础语法部分不算特别难，不熟练的查一查就能写得出来。难点集中在test和algorithm章节，主要是test后半部分，一些环境变量的设置，以及rust实现数据结构算法所用到的unsafe rust和智能指针的操作。</p>
+<p>之后尝试阅读Learning Rust With Entirely Too Many Linked Lists，和用Rust实现一些算法和数据结构来巩固，多敲一些代码提高熟练度，多查文档。</p>
+<h2 id="RISC-V学习"><a href="#RISC-V学习" class="headerlink" title="RISC-V学习"></a>RISC-V学习</h2><p>这部分知识学习首先是阅读了《计算机组成于设计：RISC-V版》的前两个章节，对RISC-V的基本指令和指令格式有一个了解，以及RISC-V的设计和计算机体系结构的8个伟大思想之间的联系。之前阅读csapp并完成lab实验，有些x86_64的经验，对于一些基本指令和作用的理解还算轻松。难点集中在原子指令上。之后主要阅读了《RISC-V手册》，主要重点是第十章的特权架构，涉及之后rCore的特权级切换操作以及虚拟内存的实现（SV39多级页表）</p>
+<p>学习后可以看出RISC-V指令集的强大和简单，和x86_64不同的理念。六种基本指令格式，等长指令就能搞定一切，精妙的设计（就是有时候脑子转不过来）</p>
+<h2 id="查缺补漏"><a href="#查缺补漏" class="headerlink" title="查缺补漏"></a>查缺补漏</h2><p>阅读操作系统导论，目前还在虚拟化部分，然后观看导学阶段的OS课录播，补足操作系统的理论知识和概念</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/04/22/2024%E6%98%A5%E5%AD%A3%E5%BC%80%E6%BA%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%AD%E7%BB%83%E8%90%A5%E6%80%BB%E7%BB%93-%E6%96%BD%E6%81%BA%E6%B2%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/04/22/2024%E6%98%A5%E5%AD%A3%E5%BC%80%E6%BA%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%AD%E7%BB%83%E8%90%A5%E6%80%BB%E7%BB%93-%E6%96%BD%E6%81%BA%E6%B2%A7/" class="post-title-link" itemprop="url">2024春季开源操作系统训练营总结-施恺沧</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-04-22 23:38:21" itemprop="dateCreated datePublished" datetime="2024-04-22T23:38:21+00:00">2024-04-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/catogory/" itemprop="url" rel="index"><span itemprop="name"><catogory></span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="初始rcore"><a href="#初始rcore" class="headerlink" title="初始rcore"></a>初始rcore</h1><p>第一次知道rcore来源于一篇知乎的帖子，当时沉迷于操作系统的学习，希望能写出一个自己的操作系统。但当时网络上更多的是对xv6的赞赏，rcore的仅仅是一句简单的提及。受限于当时初学计算机，只知语言C，不识Rust，不希望投入太多精力到语言的学习，因此并未细探rcore究竟。（当然，三分钟热度的我最后也没写完一个操作系统，希望这次能够完善地学完！）</p>
+<p>直到去年了解到这个开源操作系统训练营，加上自学了rust的基础语法，对其很有兴趣。可惜秋冬季已经结营，加上网站上模糊的教学视频实在难以学习，便又戛然而止。直至今年四月初至，又闻开营之事（别问，问就是大数据推送），喜从心中来，急急忙忙地就上了船。</p>
+<h1 id="第一阶段总结"><a href="#第一阶段总结" class="headerlink" title="第一阶段总结"></a>第一阶段总结</h1><p>第一阶段主要是熟悉rust语法，前三十道题进展迅速，仅涉及简单语法；中间几十道题中，所有权和生命周期单列出来较为简单，但是复杂场景中的所有权问题令人头疼；最后几道算法题，除去算法本身的难度，rust对于所有权和借用的限制才是最大的难点，以至于最后纯粹是与编译器斗智斗勇，几乎快忘了实现逻辑和复杂度。</p>
+<p>除此之外，有多道题目在完成过程中总是不解其意，仅仅是让其通过检测。知道提交通过之后，看到群友们的讨论才恍然大悟，但又懒于修改，还是默默学习的新的内容去吧。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/01/07/%E8%BF%90%E7%94%A8code-debug%E6%8F%92%E4%BB%B6%E5%9C%A8VSCode%E4%B8%AD%E8%B0%83%E8%AF%95ArceOS-Unikernel/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/01/07/%E8%BF%90%E7%94%A8code-debug%E6%8F%92%E4%BB%B6%E5%9C%A8VSCode%E4%B8%AD%E8%B0%83%E8%AF%95ArceOS-Unikernel/" class="post-title-link" itemprop="url">运用code-debug插件在VSCode中调试ArceOS(Unikernel)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-01-07 18:59:39" itemprop="dateCreated datePublished" datetime="2024-01-07T18:59:39+00:00">2024-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/report/" itemprop="url" rel="index"><span itemprop="name">report</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a href="https://github.com/chenzhiy2001/code-debug" target="_blank" rel="noopener">code-debug</a>是一个支持跨特权级调试的VSCode插件。在这篇文章中，我将介绍利用这个调试插件在VSCode上对ArceOS进行源代码级调试的过程。</p>
+<p>首先我们需要下载  <code>gdb-multiarch</code> :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gdb-multiarch</span><br></pre></td></tr></table></figure>
+<p>接着我们运行一下 ArceOS，从而生成 bin 和 elf 文件. 这里以RISC-V上的单核<code>arceos-helloworld</code>为例:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make A&#x3D;apps&#x2F;helloworld&#x2F; ARCH&#x3D;riscv64 LOG&#x3D;info SMP&#x3D;1 run</span><br></pre></td></tr></table></figure>
+<p>在 ArceOS 的输出中，我们发现了 QEMU的启动参数:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qemu-system-riscv64 -m 128M -smp 1 -machine virt -bios default -kernel apps&#x2F;helloworld&#x2F;&#x2F;helloworld_riscv64-qemu-virt.bin -nographic</span><br></pre></td></tr></table></figure>
+
+<p>我们将这些启动参数转移到配置文件 <code>launch.json</code> 中：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">//launch.json</span></span><br><span class="line">   &#123;</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"0.2.0"</span>,</span><br><span class="line">    <span class="attr">"configurations"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"type"</span>: <span class="string">"gdb"</span>,</span><br><span class="line">            <span class="attr">"request"</span>: <span class="string">"launch"</span>,</span><br><span class="line">            <span class="attr">"name"</span>: <span class="string">"Attach to Qemu"</span>,</span><br><span class="line">            <span class="attr">"executable"</span>: <span class="string">"$&#123;userHome&#125;/arceos/apps/helloworld/helloworld_riscv64-qemu-virt.elf"</span>,</span><br><span class="line">            <span class="attr">"target"</span>: <span class="string">":1234"</span>,</span><br><span class="line">            <span class="attr">"remote"</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">"cwd"</span>: <span class="string">"$&#123;workspaceRoot&#125;"</span>,</span><br><span class="line">            <span class="attr">"valuesFormatting"</span>: <span class="string">"parseText"</span>,</span><br><span class="line">            <span class="attr">"gdbpath"</span>: <span class="string">"gdb-multiarch"</span>,</span><br><span class="line">            <span class="attr">"showDevDebugOutput"</span>:<span class="literal">true</span>,</span><br><span class="line">            <span class="attr">"internalConsoleOptions"</span>: <span class="string">"openOnSessionStart"</span>,</span><br><span class="line">            <span class="attr">"printCalls"</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">"stopAtConnect"</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">"qemuPath"</span>: <span class="string">"qemu-system-riscv64"</span>,</span><br><span class="line">            <span class="attr">"qemuArgs"</span>: [</span><br><span class="line">                <span class="string">"-M"</span>,</span><br><span class="line">                <span class="string">"128m"</span>,</span><br><span class="line">                <span class="string">"-smp"</span>,</span><br><span class="line">                <span class="string">"1"</span>,</span><br><span class="line">                <span class="string">"-machine"</span>,</span><br><span class="line">                <span class="string">"virt"</span>,</span><br><span class="line">                <span class="string">"-bios"</span>,</span><br><span class="line">                <span class="string">"default"</span>,</span><br><span class="line">                <span class="string">"-kernel"</span>,</span><br><span class="line">                <span class="string">"apps/helloworld/helloworld_riscv64-qemu-virt.bin"</span>,</span><br><span class="line">                <span class="string">"-nographic"</span>,</span><br><span class="line">                <span class="string">"-s"</span>,</span><br><span class="line">                <span class="string">"-S"</span></span><br><span class="line">            ],</span><br><span class="line"></span><br><span class="line">         <span class="attr">"KERNEL_IN_BREAKPOINTS_LINE"</span>:<span class="number">65</span>, <span class="comment">// src/trap/mod.rs中内核入口行号。可能要修改</span></span><br><span class="line">         <span class="attr">"KERNEL_OUT_BREAKPOINTS_LINE"</span>:<span class="number">124</span>, <span class="comment">// src/trap/mod.rs中内核出口行号。可能要修改</span></span><br><span class="line">         <span class="attr">"GO_TO_KERNEL_LINE"</span>:<span class="number">30</span>, <span class="comment">// src/trap/mod.rs中，用于从用户态返回内核的断点行号。在rCore-Tutorial-v3中，这是set_user_trap_entry函数中的stvec::write(TRAMPOLINE as usize, TrapMode::Direct);语句。</span></span><br><span class="line">        &#125;,</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们在<code>qemuArgs</code>中添加了 <code>-s -S</code> 参数，这样qemu在启动的时候会打开gdb调试功能并且停在第一条指令处，方便我们设置断点. </p>
+<p>此外，应当注意<code>executable</code>参数指向包含符号表的elf文件，而不是去除符号表后的bin文件。</p>
+<p>由于ArceOS是unikernel，没有用到用户态，因此以下这三个参数不需要填写：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"KERNEL_IN_BREAKPOINTS_LINE":65, // src/trap/mod.rs中内核入口行号。可能要修改</span><br><span class="line">"KERNEL_OUT_BREAKPOINTS_LINE":124, // src/trap/mod.rs中内核出口行号。可能要修改</span><br><span class="line">"GO_TO_KERNEL_LINE":30, // src/trap/mod.rs中，用于从用户态返回内核的断点行号。在rCore-Tutorial-v3中，这是set_user_trap_entry函数中的stvec::write(TRAMPOLINE as usize, TrapMode::Direct);语句。</span><br></pre></td></tr></table></figure>
+
+
+<p>最后我们再次按f5开始调试ArceOS. 我们发现Qemu虚拟机启动，ArceOS停在了第一条指令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">oslab@oslab:~/arceos$  qemu-system-riscv64 -M 128m -smp 1 -machine virt -bios default -kernel apps/helloworld/helloworld_riscv64-qemu-virt.bin -nographic -s -S</span><br></pre></td></tr></table></figure>
+<p>接下来我们设置断点。比如我们在Hello, World输出语句打一个断点，然后按”▶️”.我们会发现断点触发了：</p>
+<img src="/blog/.io//2024/01/07/%E8%BF%90%E7%94%A8code-debug%E6%8F%92%E4%BB%B6%E5%9C%A8VSCode%E4%B8%AD%E8%B0%83%E8%AF%95ArceOS-Unikernel/code-debug-brk.png" class title="断点触发">
+
+<p>以上，通过一些简单的设置，我们就得以用code-debug调试器插件调试一个新OS.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/01/07/Unikernel%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97-%E5%8F%B6%E9%92%A7%E5%96%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/01/07/Unikernel%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97-%E5%8F%B6%E9%92%A7%E5%96%86/" class="post-title-link" itemprop="url">Unikernel学习心得-叶钧喆</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-01-07 18:56:03" itemprop="dateCreated datePublished" datetime="2024-01-07T18:56:03+00:00">2024-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Unikernel-学习心得"><a href="#Unikernel-学习心得" class="headerlink" title="Unikernel 学习心得"></a>Unikernel 学习心得</h1><p>近期学习了一些关于Unikernel的知识，以下是一些心得体会：</p>
+<ul>
+<li>Unikernel是基于组件化的思想设计的，由各种模块构成组件，再由各种组件构成最终的操作系统。</li>
+<li>而对于各种模块是如何被选择的，则是采用feature机制，指定最终所需要的模块</li>
+</ul>
+<h2 id="ArceOS实验"><a href="#ArceOS实验" class="headerlink" title="ArceOS实验"></a>ArceOS实验</h2><ul>
+<li>这周进行了ArceOS的三个实验，在练习一中学习了用println!进行彩色打印。练习二主要学会了对ArceOS进行扩展开发，在axstd中加入了Hashmap，在axhal模块中加入rng生成器，初步了解了ArceOS的调用结构。</li>
+<li>练习三修改了axalloc模块中allocator的算法，改为early算法，同时用lock()和unimplemented!()禁用其他算法</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://rcore-os.github.io/blog/2024/01/07/%E7%8E%8B%E7%82%BC%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="rcore-os Group">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="rcore-os Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/blog/2024/01/07/%E7%8E%8B%E7%82%BC%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url"><王炼学习记录></a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-01-07 18:41:43" itemprop="dateCreated datePublished" datetime="2024-01-07T18:41:43+00:00">2024-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-05-31 07:01:26" itemprop="dateModified" datetime="2024-05-31T07:01:26+00:00">2024-05-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="学习流程"><a href="#学习流程" class="headerlink" title="学习流程"></a>学习流程</h2><p>第一天的接触就是修改CI/CD的错误，我的认知里面是写构建的yml文件，实际上是需要解决starry跑在x86的问题，第一天就大概看了starry的设计文档了解了它和arceos的承接关系和相关的模块图，于是在和杨金博同学沟通后对编译选项和copy.S的代码进行了x86的改造之后发现pci等还有问题，于是问题交到金博哥手里，这时候进行了unikernel的学习，石磊老师ppt讲解和训练营的录课大概看过之后对unikernel有了大概的认识，之后就边处理strace那边的数据边学习和做lab。</p>
+<h2 id="进展"><a href="#进展" class="headerlink" title="进展"></a>进展</h2><p>目前在做第三周的实验的lab1，将c程序的镜像打包到文件系统实现了，目前对hello的报错进行修改，目前的思考是hello的命令行参数处理有问题，需要内核提供支持，目前定位到的代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if let Some(app_inode) &#x3D; open_file(path.as_str(), OpenFlags::WRONLY) &#123;</span><br><span class="line">        let all_data &#x3D; app_inode.read_all();</span><br><span class="line">        let process &#x3D; current_process();</span><br><span class="line">        let argc &#x3D; args_vec.len();</span><br><span class="line">        process.exec(all_data.as_slice(), args_vec);</span><br><span class="line">        &#x2F;&#x2F; return argc because cx.x[10] will be covered with it later</span><br><span class="line">        println!(&quot;exec argc is &#123;&#125;&quot;, argc as isize);</span><br><span class="line">        argc as isize</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        -1</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>执行后可在shell中看到初始为0执行hello程序后为1但是此时的参数处理是输出了argc为0的错误输出，目前在继续看代码准备把后续都尽快跑通。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/blog/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/22/">22</a><a class="extend next" rel="next" href="/blog/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+
+
+        </div>
+        
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">rcore-os Group</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/blog/lib/anime.min.js"></script>
+
+<script src="/blog/js/utils.js"></script>
+
+<script src="/blog/js/motion.js"></script>
+
+
+<script src="/blog/js/schemes/muse.js"></script>
+
+
+<script src="/blog/js/next-boot.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
